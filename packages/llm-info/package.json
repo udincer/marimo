@@ -14,14 +14,15 @@
     "./providers.json": "./data/generated/providers.json"
   },
   "scripts": {
-    "codegen": "node --experimental-transform-types src/generate.ts",
+    "codegen": "tsx src/generate.ts",
     "test": "vitest",
     "build": "echo 'No build step'"
   },
   "devDependencies": {
     "@marimo-team/tsconfig": "workspace:*",
-    "yaml": "^2.8.1",
+    "tsx": "^4.20.4",
     "vitest": "^3.2.4",
+    "yaml": "^2.8.1",
     "zod": "^3.25.67"
   }
 }
